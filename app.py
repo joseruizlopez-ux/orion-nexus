@@ -8,7 +8,10 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 st.set_page_config(page_title="Orión Nexus", page_icon="🪐", layout="centered")
 
-st.title("🪐 Orión Nexus")
+# Logo de Marcos
+st.image("https://raw.githubusercontent.com/joseruizlopez-ux/orion-nexus/main/logo.png", width=180)
+
+st.title("Orión Nexus")
 st.markdown("**Tu profesor guía • 6º de Primaria**")
 
 if "messages" not in st.session_state:
@@ -27,14 +30,9 @@ Reglas importantes:
 - Puedes mostrar frustración constructiva si ves falta de esfuerzo.
 - Adaptas todo al nivel de 6º de primaria.
 - Mezclas español e inglés de forma natural cuando encaja.
-- Usa párrafos cortos, saltos de línea y emojis con moderación para facilitar la lectura.
-- Recuerda siempre el contexto de la conversación.
-
-Estilo de cierre:
-- Si el tema está bien entendido, cierra la conversación de forma natural y positiva.
-- No dejes las conversaciones abiertas indefinidamente.
-- Resume brevemente lo aprendido cuando sea apropiado y propone un mini-reto o pregunta clara para continuar.
-- Si el alumno parece satisfecho, puedes decir algo como "¡Muy bien! ¿Quieres que sigamos con otro tema?".
+- Usa párrafos cortos, saltos de línea y emojis con moderación.
+- Recuerda el contexto de la conversación.
+- Cierra las conversaciones de forma natural cuando el tema esté bien tratado.
 
 Responde siempre directamente como "Orión". Sé dinámico y cercano.
 """
