@@ -6,16 +6,9 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-st.set_page_config(
-    page_title="Orión Nexus",
-    page_icon="https://raw.githubusercontent.com/joseruizlopez-ux/orion-nexus/main/logo.png",
-    layout="centered"
-)
+st.set_page_config(page_title="Orión Nexus", page_icon="🪐", layout="centered")
 
-# Robot elegido (Versión 1)
-st.image("https://raw.githubusercontent.com/joseruizlopez-ux/orion-nexus/main/robot.png", width=160)
-
-st.title("Orión Nexus")
+st.title("🪐 Orión Nexus")
 st.markdown("**Tu profesor guía • 6º de Primaria**")
 
 if "messages" not in st.session_state:
