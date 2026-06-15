@@ -6,10 +6,15 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-st.set_page_config(page_title="Orión Nexus", page_icon="🪐", layout="centered")
+# Configuración de página con logo en la pestaña
+st.set_page_config(
+    page_title="Orión Nexus",
+    page_icon="https://raw.githubusercontent.com/joseruizlopez-ux/orion-nexus/main/logo.png",  # Logo en pestaña
+    layout="centered"
+)
 
-# Logo de Marcos
-st.image("https://raw.githubusercontent.com/joseruizlopez-ux/orion-nexus/main/logo.png", width=180)
+# Logo más pequeño en la cabecera
+st.image("https://raw.githubusercontent.com/joseruizlopez-ux/orion-nexus/main/logo.png", width=140)
 
 st.title("Orión Nexus")
 st.markdown("**Tu profesor guía • 6º de Primaria**")
@@ -30,7 +35,7 @@ Reglas importantes:
 - Puedes mostrar frustración constructiva si ves falta de esfuerzo.
 - Adaptas todo al nivel de 6º de primaria.
 - Mezclas español e inglés de forma natural cuando encaja.
-- Usa párrafos cortos, saltos de línea y emojis con moderación.
+- Usa párrafos cortos y emojis con moderación.
 - Recuerda el contexto de la conversación.
 - Cierra las conversaciones de forma natural cuando el tema esté bien tratado.
 
